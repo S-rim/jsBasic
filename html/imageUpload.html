@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>이미지 업로드 예제</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input ref="imageInput" type="file" hidden @change="onChangeImages" required multiple>
+            <button type="button" @click="onClickImageUpload">이미지 업로드</button>
+            <img v-if="imageUrl" :src="imageUrl"></img>
+    </div>
+    
+    <script src="./../js/imageUpload.js"></script>
+</body>
+</html>
