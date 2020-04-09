@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>popup 예제</title>
+    <script>
+        function popup(){
+            let url = "popup.html";
+            let name = "popup test";
+            let option = "width = 500, height = 500, top = 100, left = 200, location = no"
+            window.open(url, name, option);
+        }
+    </script>
+</head>
+<body>
+    <a href = "javascript:popup()" target = "_blank">팝업</a>
+</body>
+</html>
